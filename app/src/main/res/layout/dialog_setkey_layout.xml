@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/corners_bg">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            >
+            <Button
+                android:id="@+id/close"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/close"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/ball"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="输入对方的名字"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dip"
+            style="@style/text_16_666667"
+            android:id="@+id/ms"
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="就能开始互动了"
+            style="@style/text_16_666667"
+            android:textSize="18dip"
+            android:gravity="center"
+            android:layout_marginBottom="0dip"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dip" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/his"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="输入TA的名字"
+                android:textSize="13dip"
+
+                />
+            <EditText
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/my"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dip"
+                android:hint="输入我的名字"
+                android:textSize="13dip"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/text_15_ffffff_sdw"
+                android:layout_width="245dip"
+                android:layout_height="90dip"
+                android:layout_marginLeft="0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/kaishinormal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="25dip" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
